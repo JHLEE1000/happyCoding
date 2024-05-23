@@ -8,7 +8,10 @@ public class Main {
         
         sc.close();
         
-        if ( s >= 90 && s <= 100 ) {
+        //삼항연산자 사용
+        System.out.println((s>=90)?"A":(s>=80)?"B":(s>=70)?"C":(s>=60)?"D":"F");
+        
+/**        if ( s >= 90 && s <= 100 ) {
             System.out.println("A");
         } else if ( s >= 80 && s < 90 ) {
             System.out.println("B");
@@ -19,5 +22,6 @@ public class Main {
         } else {
             System.out.println("F");
         }
+**/
     }
 }
